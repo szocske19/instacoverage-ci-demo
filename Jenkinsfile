@@ -5,7 +5,7 @@ pipeline {
 	}
 	
 	parameters {
-		string(name: "LV2018_PATH", defaultValue: "C:\Program Files\National Instruments\LabVIEW 2018\\LabVIEW.exe", description: "")
+		string(name: "LV2018_PATH", defaultValue: "C:\\Program Files\\National Instruments\\LabVIEW 2018\\LabVIEW.exe", description: "")
 	}
 	
 	stages { 
