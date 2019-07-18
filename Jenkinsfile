@@ -12,7 +12,7 @@ pipeline {
 		stage('Build') {				
 			steps { 
 				timeout(time: 5, unit: 'MINUTES') {	
-					bat 'LabVIEWCLI -LabVIEWPath "%LV2018_PATH%" -LogToConsole true -OperationName RunVI -VIPath "%WORKSPACE%\\ci-script.vi" "%WORKSPACE%\\instacoverage-ci-demo.lvproj" "%WORKSPACE%"'
+					bat 'LabVIEWCLI -LabVIEWPath "%LV2018_PATH%" -LogToConsole true -OperationName RunVI -VIPath "%WORKSPACE%\\Unit Test runner\\ci-script.vi" "%WORKSPACE%\\instacoverage-ci-demo.lvproj" "%WORKSPACE%"'
 				}
 			}
 		}
